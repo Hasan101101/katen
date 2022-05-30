@@ -1,0 +1,1 @@
+<?php katen_pagination(); ?>

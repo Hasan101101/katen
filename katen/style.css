@@ -1,0 +1,176 @@
+/*
+Theme Name: Katen
+Theme URI: https://google.com/
+Author: The Nimda Corpation
+Author URI: https://dev-beebay.pantheonsite.io/
+Description: Our default theme for 2022 is designed to take full advantage of the flexibility of the block editor. Organizations and businesses have the ability to create dynamic landing pages with endless layouts using the group and column blocks. The centered content column and fine-tuned typography also makes it perfect for traditional blogs. Complete editor styles give you a good idea of what your content will look like, even before you publish. You can give your site a personal touch by changing the background colors and the accent color in the Customizer. The colors of all elements on your site are automatically calculated based on the colors you pick, ensuring a high, accessible color contrast for your visitors.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
+Version: 1.0
+Requires at least: 5.0
+Tested up to: 5.4
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: katen
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/*:::::::::::::::::::: Modifying Template styles ::::::::::::::::::::*/
+
+/* Homepage author image styeling */
+img.author_new_style {
+  border-radius: 15px;
+}
+
+/* Fixing comment-reply button's margin bottom issues */
+.comments li.comment {
+  margin-bottom: 30px;
+}
+.comments li.comment:last-child {
+  margin-bottom: 30px;
+}
+
+/* Fixing pagination active link's styles */
+#katen_pagination li.page-item span.active {
+  color: rgb(232, 230, 227);
+  border-color: transparent;
+  background-image: linear-gradient(
+    to top,
+    rgb(123, 29, 0) 0%,
+    rgb(156, 1, 30) 51%,
+    rgb(123, 29, 0) 100%
+  );
+  background-color: initial;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px 0px;
+}
+
+/* Fixing Footer Copyright Styles */
+#copyright span.copyright p {
+  color: #9faabb;
+  margin-bottom: 0;
+}
+
+/* Comment Form Styling */
+label {
+  display: none;
+}
+span#email-notes {
+  display: none;
+}
+span.required-field-message {
+  display: none;
+}
+p.comment-form-cookies-consent {
+  display: none;
+}
+
+h3#reply-title {
+  margin-bottom: 0px;
+  margin-top: 50px;
+}
+form#commentform {
+  display: flex;
+  flex-wrap: wrap;
+}
+p.comment-form-comment {
+  flex-basis: 100%;
+}
+textarea#comment {
+  width: 100%;
+  height: 110px;
+  border-radius: 20px;
+  padding: 6px 15px;
+  border: none;
+  outline-color: #fe4f70;
+  color: #8f9bad;
+}
+p.comment-form-email {
+  flex-basis: 50%;
+}
+input#email {
+  width: 90%;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 15px;
+  font-size: 14px;
+  outline-color: #fe4f70;
+  color: #8f9bad;
+}
+p.comment-form-url {
+  flex-basis: 50%;
+}
+input#url {
+  width: 90%;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 15px;
+  font-size: 14px;
+  outline-color: #fe4f70;
+  color: #8f9bad;
+}
+p.comment-form-author {
+  flex-basis: 100%;
+  order: 2;
+}
+
+input#author {
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  padding: 6px 15px;
+  font-size: 14px;
+  outline-color: #fe4f70;
+  color: #8f9bad;
+}
+::placeholder {
+  color: #8f9bad;
+}
+
+/* Submint Button Styling */
+p.form-submit {
+  order: 3;
+}
+input#submit {
+  color: #fff;
+  border: 0;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-align: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  color: #fff;
+  padding: 9.5px 36px;
+  background: #fe4f70;
+  background: -webkit-linear-gradient(
+    left,
+    #fe4f70 0%,
+    #ffa387 51%,
+    #fe4f70 100%
+  );
+  background: linear-gradient(to right, #fe4f70 0%, #ffa387 51%, #fe4f70 100%);
+  background-size: 200% auto;
+}
+
+input#submit:hover {
+  color: #fff;
+  background-position: right center;
+}
+
+/* Tag archive style conflict solution */
+/* .tag {
+  display: block;
+}
+.tag:hover {
+border: none;
+color: inherit;
+} */

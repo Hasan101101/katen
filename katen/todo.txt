@@ -1,0 +1,14 @@
+primary menu's sub menu issue /////// done
+image size issue on main loop, single post //////// done
+paginate_links styling issue /////// solved
+comment form styling issue //////// solved (not working required attribute)
+tag archive page markup not center issue /////// solved
+kirki live update
+specific author socials
+customize-selective-refresh-widgets
+sidebar popular ordering issue
+acf not including from tgm
+check category all over the site 
+paginate_links style issue
+define minimum image size while posting
+have to know the procedure of theme testing
